@@ -2,6 +2,7 @@ body {
 	display: grid;
 	font-family: sans-serif;
 }
+
 .nav-options {
 	display: flex;
 	justify-content: end;
