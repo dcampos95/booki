@@ -2,7 +2,6 @@ body {
 	display: grid;
 	font-family: sans-serif;
 }
-
 .nav-options {
 	display: flex;
 	justify-content: end;
@@ -15,6 +14,7 @@ body {
 	gap: 30px;
 	margin: 30px;
 }
+
 .accommodation,
 .popular {
 	background-color: #d9d9d9;
