@@ -5,28 +5,51 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Booki</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="description" content="Booki is a travel website" />
 		<meta name="keywords" content="Travel, Hotel" />
 	</head>
 	<body>
 		<header>
-			<div class="header-options">
-				<div>
-					<a href="">Accommodation</a>
-				</div>
-				<div>
-					<a href="">Things to Do</a>
-				</div>
-			</div>
 			<img src="images/logo/Booki.png" alt="Booki" />
+			<ul>
+				<li><a href="">Accommodation</a></li>
+				<li><a href="">Things to Do</a></li>
+			</ul>
 		</header>
 		<nav>
-			<h1>Find a place to stay for your dream vacation</h1>
-			<h4>In the heart of the city or surrounded by nature</h4>
+			<h1 class="nav-title">
+				Find a place to stay for your dream vacation
+			</h1>
+			<h3 class="nav-subtitle">
+				In the heart of the city or surrounded by nature
+			</h3>
 			<form>
-				<img src="" /><input type="text" /><button>Search</button>
-				<section class="Filter">
-					<p>Filters</p>
+				<div class="search-group">
+					<span class="pin-icon">
+						<svg
+							width="14"
+							height="18"
+							viewBox="0 0 14 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z"
+								fill="black"
+							/>
+						</svg>
+					</span>
+					<input type="search" placeholder="Marsseille, France" />
+					<button>Search</button>
+				</div>
+				<section class="filter">
+					<div>Filters</div>
 					<div class="filter-options">
 						<span class="filter-option"
 							><svg
@@ -91,10 +114,10 @@
 					</div>
 				</section>
 			</form>
-			<h4>
+			<h3 class="nav-subtitle">
 				<svg
-					width="24"
-					height="24"
+					width="14"
+					height="18"
 					viewBox="0 0 24 24"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -106,11 +129,13 @@
 					/>
 				</svg>
 				There are over 500 available places to stay in this city
-			</h4>
+			</h3>
 		</nav>
 		<div class="accommodation-and-popular">
 			<section class="accommodation">
-				<h2>Marsseille Accommodation</h2>
+				<div class="accommodation-title">
+					<h2 class="section-title">Marsseille Accommodation</h2>
+				</div>
 				<div class="card-container-accommodation">
 					<div class="card">
 						<img
@@ -245,22 +270,24 @@
 						</div>
 					</div>
 				</div>
-				<p>Show more</p>
+				<h3 class="accommodation-subtitle">Show more</h3>
 			</section>
 			<section class="popular">
-				<h2>Most Popular</h2>
-				<svg
-					width="19"
-					height="16"
-					viewBox="0 0 19 16"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M2.3833 12.9375C2.3833 13.2469 2.63502 13.5 2.9458 13.5H17.0083C17.6306 13.5 18.1333 14.0027 18.1333 14.625C18.1333 15.2473 17.6306 15.75 17.0083 15.75H2.9458C1.3926 15.75 0.133301 14.4914 0.133301 12.9375V1.125C0.133301 0.503789 0.63709 0 1.2583 0C1.87951 0 2.3833 0.503789 2.3833 1.125V12.9375ZM12.1778 8.66953C11.7384 9.10898 11.0282 9.10898 10.5888 8.66953L8.5708 6.65508L5.42783 9.79453C4.98838 10.234 4.27822 10.234 3.83877 9.79453C3.39861 9.35508 3.39861 8.64492 3.83877 8.20547L7.77627 4.26797C8.21572 3.82852 8.92588 3.82852 9.36533 4.26797L11.3833 6.28242L15.0888 2.58047C15.5282 2.14031 16.2384 2.14031 16.6778 2.58047C17.1173 3.01992 17.1173 3.73008 16.6778 4.16953L12.1778 8.66953Z"
-						fill="#0065FC"
-					/>
-				</svg>
+				<div class="popular-title">
+					<h2 class="section-title">Most Popular</h2>
+					<svg
+						width="19"
+						height="16"
+						viewBox="0 0 19 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2.3833 12.9375C2.3833 13.2469 2.63502 13.5 2.9458 13.5H17.0083C17.6306 13.5 18.1333 14.0027 18.1333 14.625C18.1333 15.2473 17.6306 15.75 17.0083 15.75H2.9458C1.3926 15.75 0.133301 14.4914 0.133301 12.9375V1.125C0.133301 0.503789 0.63709 0 1.2583 0C1.87951 0 2.3833 0.503789 2.3833 1.125V12.9375ZM12.1778 8.66953C11.7384 9.10898 11.0282 9.10898 10.5888 8.66953L8.5708 6.65508L5.42783 9.79453C4.98838 10.234 4.27822 10.234 3.83877 9.79453C3.39861 9.35508 3.39861 8.64492 3.83877 8.20547L7.77627 4.26797C8.21572 3.82852 8.92588 3.82852 9.36533 4.26797L11.3833 6.28242L15.0888 2.58047C15.5282 2.14031 16.2384 2.14031 16.6778 2.58047C17.1173 3.01992 17.1173 3.73008 16.6778 4.16953L12.1778 8.66953Z"
+							fill="#0065FC"
+						/>
+					</svg>
+				</div>
 				<div class="card-container-popular">
 					<div class="card">
 						<img
@@ -334,7 +361,7 @@
 			</section>
 		</div>
 		<section class="things-to-do">
-			<h2>Things to Do in Paris</h2>
+			<h2 class="section-title">Things to Do in Paris</h2>
 			<div class="card-container-ttd">
 				<div class="card">
 					<img
