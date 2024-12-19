@@ -18,10 +18,15 @@ header ul {
 	flex-direction: row;
 	gap: 68px;
 }
-a:hover,
+header a:hover {
+	border-top: 2px solid #0065fc;
+	color: #0065fc;
+	padding-top: 10px;
+}
 .active {
 	border-top: 2px solid #0065fc;
 	color: #0065fc;
+	padding-top: 10px;
 }
 header img {
 	height: 19px;
@@ -272,9 +277,23 @@ ul {
 		border-top: none;
 		border-bottom: 2px solid #0065fc;
 		color: #0065fc;
+		padding-top: 0;
 	}
 	#booki {
 		align-self: center;
+	}
+	header ul {
+		gap: 0;
+		width: 100%;
+	}
+	header li {
+		flex-basis: 50%;
+	}
+	header a {
+		display: block;
+		border-bottom: 2px solid lightgray;
+		text-align: center;
+		padding-bottom: 10px;
 	}
 	nav {
 		padding: 0px 20px;
