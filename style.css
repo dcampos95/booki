@@ -17,6 +17,8 @@ header ul {
 	display: flex;
 	flex-direction: row;
 	gap: 68px;
+	font-size: 16px;
+	font-weight: 400;
 }
 header a:hover {
 	border-top: 2px solid #0065fc;
@@ -51,8 +53,9 @@ header img {
 }
 .search-group {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
+	width: 337px;
+	position: relative;
 	margin: 35px 0px 35px 0px;
 }
 .pin-icon {
@@ -63,20 +66,26 @@ header img {
 	background-color: #f2f2f2;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
-	height: 49px;
-	width: 50px;
-}
-.search-group input,
-button {
 	padding: 15px;
+	border: 1px solid #f2f2f2;
 }
-input #search-bar {
-	padding: 15px;
+.search-group input {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	outline: none;
+	height: 47px;
+}
+header input #placeholder {
+	font-size: 18px;
+	font-weight: 700;
 }
 .search-group button {
 	margin: 0;
 	font-size: 18px;
 	font-weight: 700;
+	padding: 15px;
 	text-align: center;
 	background-color: #0065fc;
 	color: #ffffff;
@@ -241,14 +250,24 @@ a {
 footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background-color: #d9d9d9;
+	background-color: #f2f2f2;
 	margin-top: 35px;
-	padding: 30px;
+	padding: 20px;
 }
 ul {
-	font-size: 16px;
 	list-style-type: none;
 	padding-inline-start: 0px;
+}
+footer h1 {
+	font-size: 18px;
+	font-weight: 700;
+}
+footer ul {
+	gap: 15px;
+}
+footer li {
+	font-size: 16px;
+	font-weight: 400;
 }
 .star-filled {
 	color: #0065fc;
@@ -274,7 +293,10 @@ ul {
 		height: 200px;
 	}
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 375px) {
+	body {
+		margin: 0;
+	}
 	.main-container {
 		padding: 0px;
 	}
@@ -313,10 +335,14 @@ ul {
 	nav {
 		padding: 0px 20px;
 	}
+	.filter-bar {
+		display: block;
+	}
 	.filter-options {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 30px;
+		gap: 20px 10px;
+		margin-top: 20px;
 	}
 	.search-group button {
 		border-top-left-radius: 15px;
@@ -345,6 +371,7 @@ ul {
 	.accommodation,
 	.popular {
 		border-radius: 0px;
+		padding: 20px;
 	}
 	.accommodation {
 		grid-area: a;
@@ -358,6 +385,7 @@ ul {
 	}
 	.things-to-do {
 		margin: 0px;
+		padding: 20px;
 	}
 	footer {
 		display: flex;
