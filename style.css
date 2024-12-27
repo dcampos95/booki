@@ -84,6 +84,9 @@ input #search-bar {
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
+button svg {
+	display: none;
+}
 .filter-bar {
 	display: flex;
 	flex-direction: row;
@@ -95,7 +98,7 @@ input #search-bar {
 .filter-options {
 	display: flex;
 	flex-direction: row;
-	gap: 20px;
+	gap: 15px;
 }
 .filter-button {
 	display: flex;
@@ -108,9 +111,16 @@ input #search-bar {
 	gap: 10px;
 	font-size: 17px;
 	font-weight: 700;
+	transition: background-color 0.3s ease-in-out;
 }
-.activated {
+.filter-button:hover {
 	background-color: #deebff;
+	cursor: default;
+}
+.filter-button svg {
+	flex-basis: 22px;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 .infobar {
 	display: flex;
@@ -160,8 +170,8 @@ input #search-bar {
 .card-container-accommodation img {
 	width: 100%;
 	height: 136px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 .accommodation-subtitle {
 	font-size: 18px;
@@ -183,8 +193,8 @@ input #search-bar {
 .card-container-popular img {
 	width: 33%;
 	height: 136px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
 .card-container-ttd img {
@@ -311,6 +321,12 @@ ul {
 	.search-group button {
 		border-top-left-radius: 15px;
 		border-bottom-left-radius: 15px;
+	}
+	button svg {
+		display: block;
+	}
+	button span {
+		display: none;
 	}
 	.accommodation-and-popular,
 	.card-container-accommodation,
