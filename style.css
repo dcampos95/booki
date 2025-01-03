@@ -1,5 +1,6 @@
 body {
 	font-family: "Raleway", sans-serif;
+	margin: 0px;
 }
 .main-container {
 	max-width: 1440px;
@@ -78,11 +79,12 @@ header img {
 	height: 47px;
 }
 header input #placeholder {
+	font: #000;
 	font-size: 18px;
 	font-weight: 700;
 }
 .search-group button {
-	margin: 0;
+	margin: -1px;
 	font-size: 18px;
 	font-weight: 700;
 	padding: 15px;
@@ -268,6 +270,7 @@ footer ul {
 footer li {
 	font-size: 16px;
 	font-weight: 400;
+	margin-bottom: 15px;
 }
 .star-filled {
 	color: #0065fc;
@@ -299,6 +302,9 @@ footer li {
 	}
 	.main-container {
 		padding: 0px;
+	}
+	header img {
+		padding: 50px 30px;
 	}
 	header {
 		flex-direction: column;
@@ -345,8 +351,11 @@ footer li {
 		margin-top: 20px;
 	}
 	.search-group button {
+		margin: -15px;
 		border-top-left-radius: 15px;
 		border-bottom-left-radius: 15px;
+		border: 1px solid #0065fc;
+		filter: drop-shadow(0px 3px 35px rgba(0, 0, 0, 0.1));
 	}
 	button svg {
 		display: block;
