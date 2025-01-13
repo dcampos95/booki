@@ -20,6 +20,7 @@ header ul {
 	gap: 68px;
 	font-size: 16px;
 	font-weight: 400;
+	margin-top: 12px;
 }
 header a:hover {
 	border-top: 2px solid #0065fc;
@@ -78,8 +79,8 @@ header img {
 	outline: none;
 	height: 47px;
 }
-header input #placeholder {
-	font: #000;
+.search-group input::placeholder {
+	color: #000;
 	font-size: 18px;
 	font-weight: 700;
 }
@@ -296,7 +297,7 @@ footer li {
 		height: 200px;
 	}
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 680px) {
 	body {
 		margin: 0;
 	}
@@ -350,12 +351,14 @@ footer li {
 		gap: 20px 10px;
 		margin-top: 20px;
 	}
+	.search-group {
+		width: 100%;
+	}
 	.search-group button {
 		margin: -15px;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
+		border-radius: 15px;
 		border: 1px solid #0065fc;
-		filter: drop-shadow(0px 3px 35px rgba(0, 0, 0, 0.1));
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 	button svg {
 		display: block;
